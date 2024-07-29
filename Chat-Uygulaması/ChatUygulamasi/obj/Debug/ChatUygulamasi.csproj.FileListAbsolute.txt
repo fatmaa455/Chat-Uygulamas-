@@ -1,0 +1,104 @@
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\ChatUygulamasi.dll.config
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\ChatUygulamasi.dll
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\ChatUygulamasi.pdb
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\Microsoft.AspNet.SignalR.Core.dll
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\Microsoft.Owin.dll
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\Microsoft.Owin.Security.dll
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\Microsoft.Web.Infrastructure.dll
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\Newtonsoft.Json.dll
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\Owin.dll
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\System.Web.Helpers.dll
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\System.Web.Mvc.dll
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\System.Web.Razor.dll
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\System.Web.Webpages.Deployment.dll
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\System.Web.Webpages.dll
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\System.Web.Webpages.Razor.dll
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\Microsoft.AspNet.SignalR.Core.xml
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\Microsoft.Owin.xml
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\Microsoft.Owin.Security.xml
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\Newtonsoft.Json.xml
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\System.Web.Razor.xml
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\System.Web.Webpages.xml
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\System.Web.Webpages.Deployment.xml
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\System.Web.Webpages.Razor.xml
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\System.Web.Helpers.xml
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\bin\System.Web.Mvc.xml
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\obj\Debug\ChatUygulamasi.csprojResolveAssemblyReference.cache
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\obj\Debug\ChatUygulamasi.dll
+c:\users\gencay\documents\visual studio 2013\Projects\ChatUygulamasi\ChatUygulamasi\obj\Debug\ChatUygulamasi.pdb
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\ChatUygulamasi.dll.config
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\ChatUygulamasi.dll
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\ChatUygulamasi.pdb
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\Microsoft.Owin.dll
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\Microsoft.Owin.Security.dll
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\Newtonsoft.Json.dll
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\Owin.dll
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\System.Web.Helpers.dll
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\System.Web.Mvc.dll
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\System.Web.Razor.dll
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\System.Web.Webpages.dll
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\System.Web.Webpages.Razor.dll
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\Microsoft.Owin.xml
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\Microsoft.Owin.Security.xml
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\Newtonsoft.Json.xml
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\System.Web.Razor.xml
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\System.Web.Webpages.xml
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\System.Web.Webpages.Razor.xml
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\System.Web.Helpers.xml
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\bin\System.Web.Mvc.xml
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\obj\Debug\ChatUygulamasi.csproj.AssemblyReference.cache
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\obj\Debug\ChatUygulamasi.csproj.CoreCompileInputs.cache
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\obj\Debug\ChatUygulamasi.csproj.CopyComplete
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\obj\Debug\ChatUygulamasi.dll
+C:\Users\Fatma_Yazıcı\Desktop\Asp.NET-MVC-5-ve-SignalR-Chat-Uygulaması\ChatUygulamasi\obj\Debug\ChatUygulamasi.pdb
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\ChatUygulamasi.dll.config
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\ChatUygulamasi.dll
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\ChatUygulamasi.pdb
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\EntityFramework.dll
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\EntityFramework.SqlServer.dll
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\Microsoft.Owin.dll
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\Microsoft.Owin.Security.dll
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\Newtonsoft.Json.dll
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\Owin.dll
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\System.Web.Helpers.dll
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\System.Web.Mvc.dll
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\System.Web.Razor.dll
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\System.Web.Webpages.dll
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\System.Web.Webpages.Razor.dll
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\EntityFramework.xml
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\EntityFramework.SqlServer.xml
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\Microsoft.Owin.xml
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\Microsoft.Owin.Security.xml
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\Newtonsoft.Json.xml
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\System.Web.Razor.xml
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\System.Web.Webpages.xml
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\System.Web.Webpages.Razor.xml
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\System.Web.Helpers.xml
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\bin\System.Web.Mvc.xml
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\obj\Debug\ChatUygulamasi.csproj.AssemblyReference.cache
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\obj\Debug\ChatUygulamasi.csproj.CoreCompileInputs.cache
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\obj\Debug\ChatUygulamasi.csproj.CopyComplete
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\obj\Debug\ChatUygulamasi.dll
+C:\Users\Fatma_Yazıcı\Desktop\Chat-Uygulaması\ChatUygulamasi\obj\Debug\ChatUygulamasi.pdb

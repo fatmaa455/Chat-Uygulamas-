@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+@using ChatUygulamasi.Models
+@model List<kullanicilar>
+
+@{
+    ViewBag.Title = "Ana Sayfa";
+    var currentUserName = User.Identity.Name; // Mevcut kullanıcı adını doğrudan View'da al
+}
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+<h2>Kullanıcılar</h2>
+
+<table id="myTable" class="table table-striped">
+    <thead>
+        <tr>
+            <th>Ad Soyad</th>
+            <th>Mesaj</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var k in Model)
+        {
+            <tr>
+                <td>@k.ad @k.soyad</td>
+                <td><a href="/Home/Index/@k.kullaniciId" class="link">mesaj gönder</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+

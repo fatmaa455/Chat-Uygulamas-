@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SohbetUygulamasiModelStoreContainer" CdmEntityContainer="SohbetUygulamasiEntities">
+    <EntitySetMapping Name="kullanicilar">
+      <EntityTypeMapping TypeName="SohbetUygulamasiModel.kullanicilar">
+        <MappingFragment StoreEntitySet="kullanicilar">
+          <ScalarProperty Name="kullaniciId" ColumnName="kullaniciId" />
+          <ScalarProperty Name="ad" ColumnName="ad" />
+          <ScalarProperty Name="soyad" ColumnName="soyad" />
+          <ScalarProperty Name="kullaniciAdi" ColumnName="kullaniciAdi" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="sifre" ColumnName="sifre" />
+          <ScalarProperty Name="rolId" ColumnName="rolId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mesaj">
+      <EntityTypeMapping TypeName="SohbetUygulamasiModel.mesaj">
+        <MappingFragment StoreEntitySet="mesaj">
+          <ScalarProperty Name="mesajId" ColumnName="mesajId" />
+          <ScalarProperty Name="gonderenId" ColumnName="gonderenId" />
+          <ScalarProperty Name="aliciAdi" ColumnName="aliciAdi" />
+          <ScalarProperty Name="icerik" ColumnName="icerik" />
+          <ScalarProperty Name="rolId" ColumnName="rolId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="roller">
+      <EntityTypeMapping TypeName="SohbetUygulamasiModel.roller">
+        <MappingFragment StoreEntitySet="roller">
+          <ScalarProperty Name="rolId" ColumnName="rolId" />
+          <ScalarProperty Name="rolAd" ColumnName="rolAd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

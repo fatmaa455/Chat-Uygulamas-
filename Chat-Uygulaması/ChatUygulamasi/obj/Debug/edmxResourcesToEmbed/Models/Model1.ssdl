@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SohbetUygulamasiModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="kullanicilar">
+    <Key>
+      <PropertyRef Name="kullaniciId" />
+    </Key>
+    <Property Name="kullaniciId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ad" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="soyad" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="kullaniciAdi" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="sifre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="rolId" Type="int" />
+  </EntityType>
+  <EntityType Name="mesaj">
+    <Key>
+      <PropertyRef Name="mesajId" />
+    </Key>
+    <Property Name="mesajId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="gonderenId" Type="int" />
+    <Property Name="aliciAdi" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="icerik" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="rolId" Type="int" />
+  </EntityType>
+  <EntityType Name="roller">
+    <Key>
+      <PropertyRef Name="rolId" />
+    </Key>
+    <Property Name="rolId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="rolAd" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__kullanici__rolId__25869641">
+    <End Role="roller" Type="Self.roller" Multiplicity="0..1" />
+    <End Role="kullanicilar" Type="Self.kullanicilar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="roller">
+        <PropertyRef Name="rolId" />
+      </Principal>
+      <Dependent Role="kullanicilar">
+        <PropertyRef Name="rolId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__mesaj__gonderenI__286302EC">
+    <End Role="kullanicilar" Type="Self.kullanicilar" Multiplicity="0..1" />
+    <End Role="mesaj" Type="Self.mesaj" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kullanicilar">
+        <PropertyRef Name="kullaniciId" />
+      </Principal>
+      <Dependent Role="mesaj">
+        <PropertyRef Name="gonderenId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__mesaj__rolId__29572725">
+    <End Role="roller" Type="Self.roller" Multiplicity="0..1" />
+    <End Role="mesaj" Type="Self.mesaj" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="roller">
+        <PropertyRef Name="rolId" />
+      </Principal>
+      <Dependent Role="mesaj">
+        <PropertyRef Name="rolId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SohbetUygulamasiModelStoreContainer">
+    <EntitySet Name="kullanicilar" EntityType="Self.kullanicilar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mesaj" EntityType="Self.mesaj" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="roller" EntityType="Self.roller" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__kullanici__rolId__25869641" Association="Self.FK__kullanici__rolId__25869641">
+      <End Role="roller" EntitySet="roller" />
+      <End Role="kullanicilar" EntitySet="kullanicilar" />
+    </AssociationSet>
+    <AssociationSet Name="FK__mesaj__gonderenI__286302EC" Association="Self.FK__mesaj__gonderenI__286302EC">
+      <End Role="kullanicilar" EntitySet="kullanicilar" />
+      <End Role="mesaj" EntitySet="mesaj" />
+    </AssociationSet>
+    <AssociationSet Name="FK__mesaj__rolId__29572725" Association="Self.FK__mesaj__rolId__29572725">
+      <End Role="roller" EntitySet="roller" />
+      <End Role="mesaj" EntitySet="mesaj" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SohbetUygulamasiModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="kullanicilar">
+    <Key>
+      <PropertyRef Name="kullaniciId" />
+    </Key>
+    <Property Name="kullaniciId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="kullaniciAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rolId" Type="Int32" />
+    <NavigationProperty Name="roller" Relationship="Self.FK__kullanici__rolId__25869641" FromRole="kullanicilar" ToRole="roller" />
+    <NavigationProperty Name="mesaj" Relationship="Self.FK__mesaj__gonderenI__286302EC" FromRole="kullanicilar" ToRole="mesaj" />
+  </EntityType>
+  <EntityType Name="mesaj">
+    <Key>
+      <PropertyRef Name="mesajId" />
+    </Key>
+    <Property Name="mesajId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="gonderenId" Type="Int32" />
+    <Property Name="aliciAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="icerik" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="rolId" Type="Int32" />
+    <NavigationProperty Name="kullanicilar" Relationship="Self.FK__mesaj__gonderenI__286302EC" FromRole="mesaj" ToRole="kullanicilar" />
+    <NavigationProperty Name="roller" Relationship="Self.FK__mesaj__rolId__29572725" FromRole="mesaj" ToRole="roller" />
+  </EntityType>
+  <EntityType Name="roller">
+    <Key>
+      <PropertyRef Name="rolId" />
+    </Key>
+    <Property Name="rolId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="rolAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="kullanicilar" Relationship="Self.FK__kullanici__rolId__25869641" FromRole="roller" ToRole="kullanicilar" />
+    <NavigationProperty Name="mesaj" Relationship="Self.FK__mesaj__rolId__29572725" FromRole="roller" ToRole="mesaj" />
+  </EntityType>
+  <Association Name="FK__kullanici__rolId__25869641">
+    <End Role="roller" Type="Self.roller" Multiplicity="0..1" />
+    <End Role="kullanicilar" Type="Self.kullanicilar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="roller">
+        <PropertyRef Name="rolId" />
+      </Principal>
+      <Dependent Role="kullanicilar">
+        <PropertyRef Name="rolId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__mesaj__gonderenI__286302EC">
+    <End Role="kullanicilar" Type="Self.kullanicilar" Multiplicity="0..1" />
+    <End Role="mesaj" Type="Self.mesaj" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kullanicilar">
+        <PropertyRef Name="kullaniciId" />
+      </Principal>
+      <Dependent Role="mesaj">
+        <PropertyRef Name="gonderenId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__mesaj__rolId__29572725">
+    <End Role="roller" Type="Self.roller" Multiplicity="0..1" />
+    <End Role="mesaj" Type="Self.mesaj" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="roller">
+        <PropertyRef Name="rolId" />
+      </Principal>
+      <Dependent Role="mesaj">
+        <PropertyRef Name="rolId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SohbetUygulamasiEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="kullanicilar" EntityType="Self.kullanicilar" />
+    <EntitySet Name="mesaj" EntityType="Self.mesaj" />
+    <EntitySet Name="roller" EntityType="Self.roller" />
+    <AssociationSet Name="FK__kullanici__rolId__25869641" Association="Self.FK__kullanici__rolId__25869641">
+      <End Role="roller" EntitySet="roller" />
+      <End Role="kullanicilar" EntitySet="kullanicilar" />
+    </AssociationSet>
+    <AssociationSet Name="FK__mesaj__gonderenI__286302EC" Association="Self.FK__mesaj__gonderenI__286302EC">
+      <End Role="kullanicilar" EntitySet="kullanicilar" />
+      <End Role="mesaj" EntitySet="mesaj" />
+    </AssociationSet>
+    <AssociationSet Name="FK__mesaj__rolId__29572725" Association="Self.FK__mesaj__rolId__29572725">
+      <End Role="roller" EntitySet="roller" />
+      <End Role="mesaj" EntitySet="mesaj" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

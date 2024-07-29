@@ -1,0 +1,24 @@
+
+
+[
+  {
+    "SayfaNo": 1,
+    "Url": "/Home/Index",
+    "SayfaAd": "Ana Sayfa"
+  },
+  {
+    "SayfaNo": 2,
+    "Url": "/Users/Index",
+    "SayfaAd": "Kullanicilar"
+  },
+  {
+    "SayfaNo": 3,
+    "Url": "/Role/Index",
+    "SayfaAd": "Roller"
+  },
+  {
+    "SayfaNo": 4,
+    "Url": "/Task/Index",
+    "SayfaAd": "Gorevler"
+  }
+]

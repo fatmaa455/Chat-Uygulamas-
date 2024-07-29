@@ -1,0 +1,134 @@
+﻿
+@{ ViewBag.Title = "Index"; }
+
+@using ChatUygulamasi.Models
+@model List<kullanicilar>
+
+@{ var aliciId = ViewBag.AliciId as int?; // aliciId'yi ViewBag'den alın
+                string aliciAdi = "";
+
+                // Kullanıcı listesini modelden alın
+                var kullanicilar = Model as List<ChatUygulamasi.Models.kullanicilar>;
+
+                if (aliciId.HasValue)
+                {
+                    // Alıcı adını bulmak için kullanıcı listesini döngüye alın
+                    foreach (var k in kullanicilar)
+                    {
+                        if (k.kullaniciId == aliciId.Value)
+                        {
+                            aliciAdi = k.kullaniciAdi;
+                            break;
+                        }
+                    }
+                } 
+}
+
+<div>
+    <label for="txtAliciAdi">Alıcı: </label>
+    @Html.TextBox("txtAliciAdi", aliciAdi, new { id = "txtAliciAdi", @readonly = "readonly" })
+    <br />
+    <label for="txtMessage">Mesaj: </label>
+    @Html.TextBox("txtMessage")
+    <button id="btnSendMessage">Mesaj Yolla</button>
+</div>
+<div id="messages" class="chat-container"></div>
+
+@section scripts{
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="~/Scripts/jquery-1.6.4.min.js"></script>
+    <script src="~/Scripts/jquery.signalR-2.1.0.min.js"></script>
+    <script src="~/SignalR/Hubs"></script>
+    <script>
+        $(function () {
+            var chat = $.connection.chatHub;  // SignalR hub bağlantısını oluşturur.
+            var $message = $('#txtMessage');
+            var $messages = $('#messages');
+            var $aliciAdi = $('#txtAliciAdi');
+
+            $message.focus();
+
+            // Yeni mesajların görüntülenmesini sağlar
+            chat.client.sendMessage = function (gonderenAdi, aliciAdi, message, messageId) {
+                console.log("Mesaj alındı:", gonderenAdi, aliciAdi, message); // Debugging
+                if (aliciAdi === @Html.Raw(Json.Encode(User.Identity.Name)) || gonderenAdi === @Html.Raw(Json.Encode(User.Identity.Name))) {
+                    var messageHtml = '<div class="message-container" data-message-id="' + messageId + '">';
+                    messageHtml += '<div class="message-sender"><strong>' + gonderenAdi + '</strong> to <strong>' + aliciAdi + '</strong></div>';
+                    messageHtml += '<div class="message-text">' + message + '</div>';
+                    messageHtml += '</div>';
+
+                    $messages.append(messageHtml);
+                    $messages.scrollTop($messages[0].scrollHeight); // Scroll to bottom
+
+                    // yeni eklenen mesajlara tıklama olayı bağlanır
+                    attachMessageClickEvent();
+                }
+            };
+
+            // Mesaj güncelleme fonksiyonunu tanımlayın
+            chat.client.updateMessage = function (messageId, updatedMessage) {
+                console.log("Mesaj güncelleniyor:", messageId, updatedMessage); // Debugging
+                var $messageContainer = $('.message-container').filter(function () {
+                    return $(this).data('message-id') === messageId;
+                });
+                if ($messageContainer.length > 0) {
+                    $messageContainer.find('.message-text').text(updatedMessage);
+                }
+            };
+
+            // Mesaja tıklama olayını bağlama
+            function attachMessageClickEvent() {
+                $('.message-text').click(function () {
+                    var $this = $(this);
+                    var originalMessage = $this.text();
+                    var messageId = $this.closest('.message-container').data('message-id');
+
+                    $this.attr('contenteditable', 'true').focus();
+
+                    // blur ve keydown olaylarını ayrı ayrı bind ediyoruz
+                    // düzenleme tamamlandığında çalışacak olan olay
+                    $this.bind('blur', function (e) {
+                        // bir formun sayfayı yenilemeden gönderilmesini istediğimizde, e.preventDefault(); kullanarak formun varsayılan gönderme davranışını engelleyebiliriz,
+                        // bu sayede form verilerini AJAX çağrısı ile işleyebilir veya başka bir JavaScript işlemi gerçekleştirebiliriz
+                        e.preventDefault();
+                        $this.attr('contenteditable', 'false');
+                        var updatedMessage = $this.text();
+
+                        if (updatedMessage !== originalMessage) {
+                            // Sunucuya güncellenen mesajı gönder
+                            chat.server.updateMessage(messageId, updatedMessage);
+                        }
+                    });
+
+                    // enter tuşuna basıldığında çalışacak olan olay
+                    $this.bind('keydown', function (e) {
+                        if (e.key === 'Enter') {
+                            e.preventDefault();
+                            $this.attr('contenteditable', 'false');
+                            var updatedMessage = $this.text();
+
+                            if (updatedMessage !== originalMessage) {
+                                // Sunucuya güncellenen mesajı gönder
+                                chat.server.updateMessage(messageId, updatedMessage);
+                            }
+                        }
+                    });
+                });
+            }
+
+            // İlk yüklemede olay dinleyicisini bağlayın
+            attachMessageClickEvent();
+
+            // signalR bağlantısını başlatır
+            $.connection.hub.start().done(function () {
+                $('#btnSendMessage').click(function () {
+                    chat.server.send($message.val(), $aliciAdi.val());
+                    $message.val('').focus();
+                });
+            });
+
+        });
+    </script>
+}
+
+
