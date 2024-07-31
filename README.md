@@ -1,2 +1,2 @@
 # Chat-Uygulamas-
-Mesajlaşma uygulaması
+SignalR ile mesajlaşma uygulaması
